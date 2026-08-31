@@ -8,9 +8,8 @@ from
   left join gold.dim_provider p on p.ProviderID = ft.FK_ProviderID
   left join gold.dim_department dd on dd.Dept_Id = p.DeptID
 group by
-  all 
-  
-  
+  all
+
 --Total Charge Amount per provider by department for each month for year 2024
 select
   concat(p.firstname, ' ', p.LastName) Provider_Name,
